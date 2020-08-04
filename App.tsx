@@ -15,7 +15,7 @@ export default class App extends React.Component<IHomeProps, IHomeState> {
   return (
     <View style={styles.container}>
       <Text style={styles.textStyle}>My first React app!</Text>
-      <Text>This is neat</Text>
+      <Text style={styles.textStyle}>This is neat</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -25,12 +25,14 @@ export default class App extends React.Component<IHomeProps, IHomeState> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#eee',
+    backgroundColor: 'lightgreen',
     alignItems: 'center',
     justifyContent: 'center',
   },
   textStyle: {
-    fontSize: 20,
-    color: 'blue'
+    fontFamily: 'notoserif',
+    fontSize: 40,
+    color: 'white',
+    backgroundColor: 'red'
   }
 });
